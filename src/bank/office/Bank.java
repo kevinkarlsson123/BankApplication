@@ -6,8 +6,6 @@
 
 package bank.office;
 
-
-
 import bank.customer.Customer;
 import java.util.ArrayList;
 import java.util.List;
