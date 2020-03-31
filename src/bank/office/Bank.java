@@ -91,10 +91,23 @@ public class Bank {
         }
         
     }
-        
+    
+    /**
+     * 
+     * @return 
+     */
+    public String showCustomers(){
+        String customers = "";
+        for (Customer customer : customerList) {
+            customers = customers + customer.toString() + "\n" ;
+        }
+        return customers;
+    }
+    
+    
     @Override
     public String toString() {
-        return "/n/tName : " + this.getName() + ",/n/tCustomers : " + this.getCustomerList().size()  + ",/n/tBankBalance : " + this.getBankBalance() + "/n/t";
+        return "{\n\tBankName : " + this.getName() + ",\n\tBankBalance : " + this.getBankBalance() + ",\n\tCustomers : " + this.getCustomerList().size()  + ",\n\t\t" + this.showCustomers() + "}";
     }
 
 }

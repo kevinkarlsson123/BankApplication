@@ -23,7 +23,13 @@ public class Customer extends Person {
     public Customer(double balance) {
         super();
     }
-
+    public Customer(String name, String birthdate) {
+        super();
+        super.setName(name);
+        super.setBirthdate(birthdate);
+        super.setGender(birthdate);
+        
+    }
     /**
      * @return the balance
      */
@@ -40,7 +46,7 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "{" + super.toString() + ",/n/t" + this.getBalance() + "/n}";
+        return "\n\t{" + super.toString() + ",\n\tBalance : " + this.getBalance() + "\n\t},";
     }
 }
 

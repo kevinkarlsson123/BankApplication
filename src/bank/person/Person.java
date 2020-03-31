@@ -68,7 +68,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "/n/t" + this.getName() + ",/n/t" + this.getGender() + ",/n/t" + this.getBirthdate();
+        return "\n\tName : " + this.getName() + ",\n\tGender : " + this.getGender() + ",\n\tBirthdate : " + this.getBirthdate();
     }
 
 }
