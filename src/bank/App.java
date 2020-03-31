@@ -7,7 +7,7 @@ package bank;
 
 /**
  *
- * @author Lars Nordstrom <codemonkey@lenbitz.io>
+ * @author Lars Nordstrom <lars.nordstrom@jgy.se>
  */
 public class App {
 
